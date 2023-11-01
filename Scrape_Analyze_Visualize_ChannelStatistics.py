@@ -107,8 +107,11 @@ for tick in ax.get_xticklabels():
 
     # Set the x and y axis labels and plot title
     ax.set(xlabel='Channels', ylabel='Subscribers')
-    plt.title('Subscriber Count for Different Channels')
+    plt.title('Subscriber Count for Different Channels', fontsize=20, fontweight='bold')
 
+# Set the x and y labels' font size
+plt.xlabel('Channels', fontsize=16, fontweight='bold')
+plt.ylabel('Subscribers', fontsize=16, fontweight='bold')
 
 # Add a grid to the y-axis
 ax.yaxis.grid(True, linestyle='--', alpha=0.7)
